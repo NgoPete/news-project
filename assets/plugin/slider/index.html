@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <title>Qwl pagination</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+    <style>
+      #wrapper {
+        margin: 0 auto;
+        max-width: 960px;
+      }
+    </style>
+    <div id="wrapper">
+      <div class="owl-carousel">
+        <div>
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game1.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game2.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game3.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game4.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game5.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game6.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="images/game7.jpg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
